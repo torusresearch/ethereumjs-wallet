@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<head>Test</head>
+<body>
+    <script src="dist/wallet.umd.min.js"></script>
+    <script>
+        var wallet = new Wallet(Buffer.from("08506248462eadf53f05b6c3577627071757644b3a0547315788357ec93e7b77", "hex"))
+        wallet.toV3(Buffer.from("hello")).then(console.log).catch(console.error)
+    </script>
+</body>
